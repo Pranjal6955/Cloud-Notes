@@ -6,10 +6,8 @@ import (
 	"os"
 
 	"github.com/gorilla/mux"
-	"github.com/gorilla/websocket"
 	"github.com/rs/cors"
 
-	"cloud-notes/handlers"
 	"cloud-notes/routes"
 	"cloud-notes/ws"
 )
@@ -35,7 +33,7 @@ func main() {
 
 	handler := c.Handler(router)
 
-	// Get port from environment or default to 8080
+	// Get port from environment or default to
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
