@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: collaborative-notes
+  labels:
+    name: collaborative-notes
